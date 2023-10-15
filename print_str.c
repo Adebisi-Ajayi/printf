@@ -9,8 +9,7 @@ int _strlen(char *str)
 	int s;
 
 	for (s = 0; str[s] != 0; s++);
-
-		return (s);
+	return (s);
 }
 /**
  * _strlenc - return the length of a string
@@ -20,6 +19,7 @@ int _strlen(char *str)
 int _strlenc(const char *str)
 {
 	int s;
+
 	for (s = 0; str[s] != 0; s++);
 	return (s);
 }

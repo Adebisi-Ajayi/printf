@@ -5,7 +5,12 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include <limits.h>
-
+/**
+ * struct format - structure of the format
+ * @id: identifier
+ * @f: function
+ * Retrn : nothing
+ */
 typedef struct format
 {
 	char *id;
@@ -34,4 +39,3 @@ int print_hex_extra(unsigned long int num);
 int print_rot13(va_list val);
 
 #endif
-	
