@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * printf_string - print a string
- * @val: argument
+ * print_s - print a string
+ * @s: argument
  * Return: the length of the string
  */
-int printf_string(va_list val)
+int print_s(va_list s)
 {
 	char *str = va_arg(s, char *);
 	int i = 0;
