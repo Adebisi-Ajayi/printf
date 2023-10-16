@@ -7,11 +7,11 @@
 int print_s(va_list s)
 {
 	char *str = va_arg(s, char *);
-	int i = 0;
+	int a = 0;
 
 	if (str == NULL)
 		str = "(null)";
-	while (str[i])
-		_putchar(str[i++]);
-	return (i);
+	while (str[a])
+		_putchar(str[a++]);
+	return (a);
 }

@@ -12,7 +12,7 @@ int print_X(va_list X)
 	unsigned int a[8];
 	unsigned int j = 1, m = 268435456, n, summ = 0;
 	char diff;
-	int counters;
+	int counterss;
 
 	n = va_arg(X, unsigned int);
 	diff = 'A' - ':';
@@ -31,8 +31,8 @@ int print_X(va_list X)
 				_putchar('0' + a[j]);
 			else
 				_putchar('0' + diff + a[j]);
-			counters++;
+			counterss++;
 		}
 	}
-	return (counters);
+	return (counterss);
 }

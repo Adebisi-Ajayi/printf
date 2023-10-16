@@ -10,7 +10,7 @@
 int print_r(va_list r)
 {
 	char *str;
-	int i = 0, counters = 0;
+	int i = 0, counterss = 0;
 
 	str = va_arg(r, char *);
 	if (str == NULL)
@@ -20,7 +20,7 @@ int print_r(va_list r)
 	for (i -= 1; i >= 0; i--)
 	{
 		_putchar(str[i]);
-		counters++;
+		counterss++;
 	}
-	return (counters);
+	return (countersss);
 }

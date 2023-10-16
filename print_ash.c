@@ -13,10 +13,10 @@ int print_ash(va_list ash)
 	for (int i = 0; i < sizeof(numbers) / sizeof(numbers[0]);)
 	{
 		i++;
-		int number = numbers[i];
+		int number1 = numbers[i];
 
-		_putchar("%#o\n", number);
-		_putchar("%#x\n", number);
+		_putchar("%#o\n", number1);
+		_putchar("%#x\n", number1);
 	}
 	return (0);
 }

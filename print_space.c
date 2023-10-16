@@ -13,9 +13,9 @@ int print_space(va_list space)
 	for (int i = 0; i < sizeof(numbers) / sizeof(numbers[0]);)
 	{
 		i++;
-		int number = numbers[i];
+		int number1 = numbers[i];
 
-		_putchar("% d\n", number);
+		_putchar("% d\n", number1);
 	}
 	return (0);
 }

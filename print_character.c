@@ -7,8 +7,8 @@
  */
 int print_c(va_list c)
 {
-	char x_character = (char)va_arg(c, int);
+	char characters = (char)va_arg(c, int);
 
-	_putchar(x_character);
+	_putchar(characters);
 	return (1);
 }
