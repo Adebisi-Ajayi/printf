@@ -3,18 +3,19 @@
 #include <stdlib.h>
 /**
  * print_space - space to be printed
- * @ab: fuction to print
+ * @space: fuction to print
  * Return: nothing
  */
-int print_space(va_list ab)
+int print_space(va_list space)
 {
 	int numbers[] = {5, -7, 42, -3, 8};
 
-	for (i = 0; i < sizeof(numbers) / sizeof(numbers[0]);)
+	for (int i = 0; i < sizeof(numbers) / sizeof(numbers[0]);)
 	{
-		number = numbers[i];
-		_putchar("% d\n", number);
 		i++;
+		int number = numbers[i];
+
+		_putchar("% d\n", number);
 	}
 	return (0);
 }
