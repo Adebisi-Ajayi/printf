@@ -9,7 +9,7 @@ int print_o(va_list o)
 {
 	unsigned int a[11];
 	unsigned int j = 1, m = 1073741824, n, summ = 0;
-	int counters;
+	int counterss;
 
 	n = va_arg(o, unsigned int);
 	a[0] = n / m;
@@ -24,8 +24,8 @@ int print_o(va_list o)
 		if (summ || j == 10)
 		{
 			_putchar('0' + a[j]);
-			counters++;
+			counterss++;
 		}
 	}
-	return (counters);
+	return (counterss);
 }

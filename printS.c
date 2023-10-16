@@ -10,7 +10,7 @@
 int print_S(va_list S)
 {
 	unsigned int i = 0;
-	int counters = 0;
+	int counterss = 0;
 	char *str = va_arg(S, char *);
 
 	if (str == NULL)
@@ -21,14 +21,14 @@ int print_S(va_list S)
 		{
 			_putchar('\\');
 			_putchar('x');
-			counters += 2;
-			counters += print_x(S);
+			counterss += 2;
+			counterss += print_x(S);
 		}
 		else
 		{
 			_putchar(str[i]);
-			counters++;
+			counterss++;
 		}
 	}
-	return (counters);
+	return (counterss);
 }

@@ -9,7 +9,7 @@ int print_b(va_list b)
 {
 	unsigned int n, m = 2147483648, j = 1, summ = 0;
 	unsigned int a[32];
-	int counters = 0;
+	int counterss = 0;
 
 	n = va_arg(b, unsigned int);
 	a[0] = n / m;
@@ -25,8 +25,8 @@ int print_b(va_list b)
 		if (summ || j == 31)
 		{
 			_putchar('0' + a[j]);
-			counters++;
+			counterss++;
 		}
 	}
-	return (counters);
+	return (counterss);
 }

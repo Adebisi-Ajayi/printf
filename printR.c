@@ -10,7 +10,7 @@ int print_R(va_list R)
 {
 	char *str;
 	unsigned int i = 0, j = 0;
-	int counters = 0;
+	int counterss = 0;
 	char in[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char out[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
@@ -24,15 +24,15 @@ int print_R(va_list R)
 			if (in[j] == str[i])
 			{
 				_putchar(out[j]);
-				counters++;
+				counterss++;
 				break;
 			}
 		}
 		if (!in[j])
 		{
 			_putchar(str[i]);
-			counters++;
+			counterss++;
 		}
 	}
-	return (counters);
+	return (counterss);
 }

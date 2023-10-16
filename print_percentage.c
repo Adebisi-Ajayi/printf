@@ -8,7 +8,7 @@
  */
 int print_p(va_list p)
 {
-	int counters = 0;
+	int counterss = 0;
 	unsigned int a[16];
 	unsigned int i = 0, summ = 0;
 	unsigned long n, m = 1152921504606846976;
@@ -20,13 +20,13 @@ int print_p(va_list p)
 		for (; str[i]; i++)
 		{
 			_putchar(str[i]);
-			counters++;
+			counterss++;
 		}
-		return (counters);
+		return (counterss);
 	}
 	_putchar('0');
 	_putchar('x');
-	counters = 2;
+	counterss = 2;
 
 	a[0] = n / m;
 	for (i = 1; i < 16; i++)
@@ -43,8 +43,8 @@ int print_p(va_list p)
 				_putchar('0' + a[i]);
 			else
 				_putchar('0' + ('a' - ':') + a[i]);
-			counters++;
+			counterss++;
 		}
 	}
-	return (counters);
+	return (counterss);
 }

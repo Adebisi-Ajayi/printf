@@ -9,14 +9,14 @@
 int print_d(va_list i)
 {
 	int a[10];
-	int j = 1, m = 1000000000, n, summ = 0, counters = 0;
+	int j = 1, m = 1000000000, n, summ = 0, counterss = 0;
 
 	n = va_arg(i, int);
 	if (n < 0)
 	{
 		n *= -1;
 		_putchar('-');
-		counters++;
+		counterss++;
 	}
 	a[0] = n / m;
 
@@ -32,8 +32,8 @@ int print_d(va_list i)
 		if (summ != 0 || j == 9)
 		{
 			_putchar('0' + a[j]);
-			counters++;
+			counterss++;
 		}
 	}
-	return (counters);
+	return (counterss);
 }
