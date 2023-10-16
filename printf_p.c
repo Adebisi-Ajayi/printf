@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * printf_p - A function that prints an address
+ * print_p - A function that prints an address
  * @p: address to print
  * Return: number of printed characters
  */
-int printf_p(va_list p)
+int print_p(va_list p)
 {
 	int counters = 0;
 	unsigned int a[16];

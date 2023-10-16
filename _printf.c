@@ -19,7 +19,7 @@ int (*check_format(const char *format))(va_list)
 		{"o", printf_o},
 		{"x", printf_x},
 		{"X", printf_X},
-		{"p", printf_p},
+		{"p", print_p},
 		{"S", printf_S},
 		{"r", printf_r},
 		{"R", printf_R},

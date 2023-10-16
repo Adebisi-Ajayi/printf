@@ -34,6 +34,7 @@ int printf_o(va_list o);
 int printf_x(va_list x);
 int printf_X(va_list X);
 int printf_p(va_list p);
+int print_p(va_list p);
 int printf_S(va_list S);
 int printf_r(va_list r);
 int printf_R(va_list R);
