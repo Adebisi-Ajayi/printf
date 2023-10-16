@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * print_o - A function that prints an unsigned int in octal notation
+ * printf_o - A function that prints an unsigned int in octal notation
  * @o: unsigned int to print
  * Return: number of printed digits
  */
-int print_o(va_list o)
+int printf_o(va_list o)
 {
 	unsigned int a[11];
 	unsigned int j = 1, m = 1073741824, n, summ = 0;
-	int counterss;
+	int counters;
 
 	n = va_arg(o, unsigned int);
 	a[0] = n / m;
@@ -24,8 +24,8 @@ int print_o(va_list o)
 		if (summ || j == 10)
 		{
 			_putchar('0' + a[j]);
-			counterss++;
+			counters++;
 		}
 	}
-	return (counterss);
+	return (counters);
 }

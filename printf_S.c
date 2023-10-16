@@ -2,15 +2,15 @@
 #include <stdlib.h>
 
 /**
- * print_S - A function that prints a string and nonprintable
+ * printf_S - A function that prints a string and nonprintable
  * character ascii values
  * @S: string to print
  * Return: number of printed characters
  */
-int print_S(va_list S)
+int printf_S(va_list S)
 {
 	unsigned int i = 0;
-	int counterss = 0;
+	int counters = 0;
 	char *str = va_arg(S, char *);
 
 	if (str == NULL)
@@ -21,14 +21,14 @@ int print_S(va_list S)
 		{
 			_putchar('\\');
 			_putchar('x');
-			counterss += 2;
-			counterss += print_x(S);
+			counters += 2;
+			counters += printf_x(S);
 		}
 		else
 		{
 			_putchar(str[i]);
-			counterss++;
+			counters++;
 		}
 	}
-	return (counterss);
+	return (counters);
 }

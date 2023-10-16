@@ -3,14 +3,14 @@
 #include <stdlib.h>
 
 /**
- * print_r - A function that prints a string in reverse
+ * printf_r - A function that prints a string in reverse
  * @r: string to print
  * Return: number of printed characters
  */
-int print_r(va_list r)
+int printf_r(va_list r)
 {
 	char *str;
-	int i = 0, counterss = 0;
+	int i = 0, counters = 0;
 
 	str = va_arg(r, char *);
 	if (str == NULL)
@@ -20,7 +20,7 @@ int print_r(va_list r)
 	for (i -= 1; i >= 0; i--)
 	{
 		_putchar(str[i]);
-		counterss++;
+		counters++;
 	}
-	return (countersss);
+	return (counters);
 }

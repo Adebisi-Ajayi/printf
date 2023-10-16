@@ -2,21 +2,21 @@
 #include <stdlib.h>
 
 /**
- * print_d - A function that prints a decimal base 10
+ * printf_d - A function that prints a decimal base 10
  * @i: base 10 integer to print
  * Return: number of printed digits
  */
-int print_d(va_list i)
+int printf_d(va_list i)
 {
 	int a[10];
-	int j = 1, m = 1000000000, n, summ = 0, counterss = 0;
+	int j = 1, m = 1000000000, n, summ = 0, counters = 0;
 
 	n = va_arg(i, int);
 	if (n < 0)
 	{
 		n *= -1;
 		_putchar('-');
-		counterss++;
+		counters++;
 	}
 	a[0] = n / m;
 
@@ -32,8 +32,8 @@ int print_d(va_list i)
 		if (summ != 0 || j == 9)
 		{
 			_putchar('0' + a[j]);
-			counterss++;
+			counters++;
 		}
 	}
-	return (counterss);
+	return (counters);
 }

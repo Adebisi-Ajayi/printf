@@ -10,22 +10,19 @@ int (*check_format(const char *format))(va_list)
 {
 	int i = 0;
 	printer_t p[] = {
-		{"c", print_c},
-		{"s", print_s},
-		{"i", print_i},
-		{"d", print_d},
-		{"b", print_b},
-		{"u", print_u},
-		{"o", print_o},
-		{"x", print_x},
-		{"X", print_X},
-		{"p", print_p},
-		{"S", print_S},
-		{"r", print_r},
-		{"R", print_R},
-		{"+", print_plus},
-		{" ", print_space},
-		{"#", print_ash},
+		{"c", printf_c},
+		{"s", printf_s},
+		{"i", printf_i},
+		{"d", printf_d},
+		{"b", printf_b},
+		{"u", printf_u},
+		{"o", printf_o},
+		{"x", printf_x},
+		{"X", printf_X},
+		{"p", printf_p},
+		{"S", printf_S},
+		{"r", printf_r},
+		{"R", printf_R},
 		{NULL, NULL}
 	};
 

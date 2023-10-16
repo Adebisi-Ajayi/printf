@@ -2,17 +2,17 @@
 #include <stdlib.h>
 
 /**
- * print_X - A function that prints an ascii character value
+ * printf_X - A function that prints an ascii character value
  * in uppercase hexadecimal
  * @X: char to print
  * Return: number of printed characters
  */
-int print_X(va_list X)
+int printf_X(va_list X)
 {
 	unsigned int a[8];
 	unsigned int j = 1, m = 268435456, n, summ = 0;
 	char diff;
-	int counterss;
+	int counters;
 
 	n = va_arg(X, unsigned int);
 	diff = 'A' - ':';
@@ -31,8 +31,8 @@ int print_X(va_list X)
 				_putchar('0' + a[j]);
 			else
 				_putchar('0' + diff + a[j]);
-			counterss++;
+			counters++;
 		}
 	}
-	return (counterss);
+	return (counters);
 }

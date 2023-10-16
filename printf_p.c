@@ -2,15 +2,15 @@
 #include <stdlib.h>
 
 /**
- * print_p - A function that prints an address
+ * printf_p - A function that prints an address
  * @p: address to print
  * Return: number of printed characters
  */
-int print_p(va_list p)
+int printf_p(va_list p)
 {
-	int counterss = 0;
+	int counters = 0;
 	unsigned int a[16];
-	unsigned int i = 0, summ = 0;
+	unsigned int i = 0, sum = 0;
 	unsigned long n, m = 1152921504606846976;
 	char *str = "(nil)";
 
@@ -20,13 +20,13 @@ int print_p(va_list p)
 		for (; str[i]; i++)
 		{
 			_putchar(str[i]);
-			counterss++;
+			counters++;
 		}
-		return (counterss);
+		return (counters);
 	}
 	_putchar('0');
 	_putchar('x');
-	counterss = 2;
+	counters = 2;
 
 	a[0] = n / m;
 	for (i = 1; i < 16; i++)
@@ -36,15 +36,15 @@ int print_p(va_list p)
 	}
 	for (i = 0; i < 16; i++)
 	{
-		summ += a[i];
-		if (summ || i == 15)
+		sum += a[i];
+		if (sum || i == 15)
 		{
 			if (a[i] < 10)
 				_putchar('0' + a[i]);
 			else
 				_putchar('0' + ('a' - ':') + a[i]);
-			counterss++;
+			counters++;
 		}
 	}
-	return (counterss);
+	return (counters);
 }
