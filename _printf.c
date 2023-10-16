@@ -23,6 +23,9 @@ int (*check_format(const char *format))(va_list)
 		{"S", print_S},
 		{"r", print_r},
 		{"R", print_R},
+		{"+", print_plus},
+		{" ", print_space},
+		{"#", print_#},
 		{NULL, NULL}
 	};
 

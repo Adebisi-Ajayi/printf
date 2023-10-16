@@ -16,6 +16,9 @@ typedef struct printer
 	int (*f)(va_list);
 } printer_t;
 
+int print_plus(va_list a);
+int print_space(va_list ab);
+int print_ash(va_list abb);
 int _printf(const char *format, ...);
 int _putchar(char c);
 int print_c(va_list c);
