@@ -18,12 +18,6 @@ typedef struct printer
 
 int _printf(const char *format, ...);
 int _putchar(char c);
-unsigned char handle_flags(const char *flag, char *index);
-unsigned char handle_length(const char *modifier, char *index);
-int hangle_width(va_list args, const char *modifier, char *index);
-int handle_precisions(va_list args, const char *modifier, char *index);
-unsigned int (*handle_specifiers(const char *specifier))(va_list, buffer_a *,
-		unsigned char, int, int, unsigned char);
 int printf_c(va_list c);
 int printf_s(va_list s);
 int printf_i(va_list i);
