@@ -9,8 +9,14 @@
 int (*check_format(const char *format))(va_list)
 {
 	int i = 0;
+	int j;
 	printer_t p[] = {
 		{"c", printf_c},
+		{'+', Plus},
+		{'0', Zero},
+		{'-', Negative},
+		{' ', Space},
+		{'#', Hash},
 		{"s", printf_s},
 		{"i", printf_i},
 		{"d", printf_d},
